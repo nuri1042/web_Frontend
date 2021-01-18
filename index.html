@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8">
+        <title>심플포트폴리오</title>
+        <link href="css/reset.css" rel="stylesheet"
+              type="text/css" />
+        <!-- 사용할 외부 css파일을 현재 html 문서와 연결 -->
+
+        <link href="css/style.css" rel="stylesheet"
+              type="text/css" />
+        <script src="js/jquery.1.12.4.js" type="text/javascript">
+        </script>
+        <script src="plugins/bxslider/js/jquery.bxslider.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="plugins/web-fonts-with-css/css/all.css" type="text/css">
+        <script>
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    controls:false,
+                    pager:false,
+                    auto:true
+                });
+            });
+       </script>
+    </head>
+    <body>
+       <!--
+        <img src="images/a.jpg" alt="샘플 배경이미지_01">
+        <!-- alt를 이용해 사용할 이미지가 어떤 이미지인지 가시적으로 알려줌-->
+        <!--img tag는 이미지 삽입 할 때 이미지 원래 가로세로 크기를 그대로 유지시켜 화면에 삽입함. 화면이 작고 이미지가 크면 스크롤이 생김-->
+        <div class="overlay"></div>
+        <div class="slider">
+            <div class="background_01"></div>
+            <div class="background_02"></div>
+            <div class="background_03"></div>
+        </div>
+        <div class="contents">
+            <p class="contents_name">Kim Nu Ri</p>
+            <p class="contents_job">I'm Web Programmar & Web Designer</p>
+            <!-- text는 p태그로 가능-->
+            <div class="contents_sns">
+                <ul class="contents_list">
+                   <!-- 비순서형 목록-->
+                    <li>
+                       <a href="https://github.com/nuri1042" target="_blank">
+                            <i class="fab fa-github"></i>
+                       </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <i class="fab fa-facebook"></i>
+                       </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <i class="fab fa-instagram"></i>
+                       </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <i class="fab fa-blogger-b"></i>
+                       </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
