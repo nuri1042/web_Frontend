@@ -157,6 +157,16 @@
         transferMine(ri + 1, ci + 1);
       }
     }
+    function showMines() {
+      const mines = [CODE.MINE, CODE.FLAG_MINE, CODE.FLAG_MINE];
+      data.forEach((row, rowIndex) => {
+        row.forEach((cell, cellIndex) => {
+          if (mines.includes(cell)) {
+            $tbody.children[rowIndex].children[cellIndex].textContent = 'X';
+          }
+        });
+      });
+    }
     function onLeftClick(event) {
       const target = event.target; // td 태그
       const rowIndex = target.parentNode.rowIndex;
@@ -181,6 +191,7 @@
         openAround(rowIndex, cellIndex);
       } else if (cellData === CODE.MINE) {
         // 지뢰 칸이면
+        showMines();
         clearInterval(interval);
         target.textContent = '펑';
         target.className = 'opened';
