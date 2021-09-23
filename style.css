@@ -189,6 +189,6 @@ header .icons .fa-search {
 @media screen and (min-width: 768px) {
   .infoAndUpNext {
     flex-direction: row;
-    margin: var(--padding) 10;
+    margin: var(--padding) 0;
   }
 }
